@@ -3,22 +3,20 @@ This project demonstrates end-to-end backend automation using Python. It covers 
 
 ## Note: This project does not use PyTest. All test cases are implemented using behave (a BDD framework).
 
-## Screenshots
+## Allure Report Screenshots
 
-### Allure Report - Overview
-![Overview](Project%20Demo/Allure_Project_Report_overview.png)
-
-### Allure Report - Suites
-![Suites](Project%20Demo/Allure_Project_Report_suites.png)
-
-### Allure Report - Behaviors
-![Behaviors](Project%20Demo/Allure_Project_Report_Behaviors.png)
-
-### Allure Report - Graphs
-![Graphs](Project%20Demo/Allure_Project_Report_graphs.png)
-
-### Allure Report - Timeline
-![Timeline](Project%20Demo/Allure_Project_Report_Timeline.png)
+<table>
+  <tr>
+    <td><img src="Project%20Demo/Allure_Project_Report_overview.png" width="250"/></td>
+    <td><img src="Project%20Demo/Allure_Project_Report_suites.png" width="250"/></td>
+    <td><img src="Project%20Demo/Allure_Project_Report_Behaviors.png" width="250"/></td>
+  </tr>
+  <tr>
+    <td><img src="Project%20Demo/Allure_Project_Report_graphs.png" width="250"/></td>
+    <td><img src="Project%20Demo/Allure_Project_Report_Timeline.png" width="250"/></td>
+    <td></td>
+  </tr>
+</table>
 
 
 ## Demo Video
@@ -79,8 +77,8 @@ This project is built as part of a Python SDET (Software Development Engineer in
 
 BackEndAutomation :
 
-1. features\n
-  1.1 steps\n
+1. features
+  1.1 steps
      1.1.1 stepImpl.py
    1.2 BookAPI.feature
    1.3 environment.py
