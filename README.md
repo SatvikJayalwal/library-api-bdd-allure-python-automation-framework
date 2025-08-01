@@ -63,10 +63,10 @@ This project is built as part of a Python SDET (Software Development Engineer in
 
 ## Folder Structure
 
-- BackEndAutomation :
+BackEndAutomation :
 
-1. features
-  1.1 steps
+1. features\n
+  1.1 steps\n
      1.1.1 stepImpl.py
    1.2 BookAPI.feature
    1.3 environment.py
