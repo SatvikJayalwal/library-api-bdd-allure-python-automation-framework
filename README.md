@@ -1,114 +1,93 @@
-# BackEndAutomation
+Backend Automation Framework using Python (SDET Project)
+This project demonstrates end-to-end backend automation using Python. It covers API testing, BDD automation framework (using behave), database validation, SSH interaction with Linux servers, file handling (JSON, CSV), and web scraping.
 
-This project demonstrates API automation testing using Python, PyTest, Behave (BDD), and Allure Reports.  
-It covers real-world use cases like POST, GET, PUT, and DELETE requests, and includes:
+Note: This project does not use PyTest. All test cases are implemented using behave (a BDD framework).
 
-- Custom test reporting
-- BDD-style test support
-- Data-driven testing
-- Modular framework structure
+Project Demo
+Screenshot of Allure Report
 
----
+Demo Video
+Watch the Demo
 
-## Screenshot
+Key Features
+JSON file parsing and creation
 
-![Allure Report Screenshot](Project%20Demo/Allure_Project_Report.png)
+CSV read/write automation
 
----
+API Testing with Python requests library
 
-## Demo Video
+CRUD operations: GET, POST, PUT, DELETE
 
-Watch the demo video here:  
-📹 `Project_demo_with_allure_reports.mp4` located inside the `Project Demo/` folder.
+Database interaction using mysql.connector
 
----
+Full BDD framework setup using behave
 
-## Features
+Dynamic payload creation using DB data
 
-- Modular framework using `pytest` and `behave`
-- Allure reporting integration for both unit and BDD tests
-- `conftest.py` for common setup/teardown
-- Organized test structure
-- Configuration-driven test data
+SSH connectivity using paramiko
 
----
+Executing remote batch jobs via SSH
 
-## Tech Stack
+Uploading/downloading files to/from Linux servers
 
-- Python
-- PyTest
-- Behave (BDD)
-- Requests Library
-- Allure Reports
-- Git & GitHub
+Web scraping using BeautifulSoup
 
----
-
-## How to Run the BDD Test Suite and Generate Allure Report
-
-1. Execute BDD tests using Behave and generate raw Allure results:
-   ```bash
-   behave -f allure_behave.formatter:AllureFormatter -o allure-results/ features/
-Generate the Allure HTML report from the results directory:
-
+How to Run the BDD Test Suite and Generate Allure Report
 bash
 Copy
 Edit
+# 1. Run the BDD tests and generate Allure raw results:
+behave -f allure_behave.formatter:AllureFormatter -o allure-results/ features/
+
+# 2. Generate the HTML report:
 allure generate allure-results/ -o allure-project-report/ --clean
-Open the generated Allure report in your default web browser:
 
-bash
-Copy
-Edit
+# 3. Open the Allure report:
 allure open allure-project-report/
-Note:
+- Make sure Allure is installed and available in your system PATH
+- The report will be available at: allure-project-report/
 
-Ensure Allure is installed and added to your system PATH.
+Course Overview (Covered in this project)
+This project is built as part of a Python SDET (Software Development Engineer in Test) course. The course covers:
 
-The report will be stored in the allure-project-report/ directory.
+- API Automation (GET, POST, PUT, DELETE)
 
-Getting Started
-Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/SatvikJayalwal/BackEndAutomation.git
-cd BackEndAutomation
-Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run PyTest tests
-bash
-Copy
-Edit
-pytest --alluredir=reports/
-Generate Allure Report
-bash
-Copy
-Edit
-allure serve reports/
-Project Structure
-kotlin
+- JSON, CSV parsing utilities
+
+- BDD Framework development (behave)
+
+- MySQL database operations using Python
+
+- SSH automation via paramiko
+
+- Remote Linux command execution
+
+- File transfer to/from remote servers
+
+- Web scraping for data extraction
+
+- Folder Structure
+graphql
 Copy
 Edit
 BackEndAutomation/
-├── data/
-├── reports/
-├── tests/
-├── features/
-│   ├── *.feature
-│   └── steps/
-├── utils/
-├── conftest.py
-├── requirements.txt
-├── Project Demo/
-│   ├── Allure_Project_Report.png
+│
+├── features/                       # BDD feature files
+│   └── AddBook.feature
+│
+├── stepDefinitions/               # Step implementations
+│   └── steps_addBook.py
+│
+├── utilities/                     # Utilities for DB, SSH, File IO, etc.
+│   └── dbUtils.py
+│   └── sshUtils.py
+│   └── jsonHandler.py
+│   └── csvHandler.py
+│
+├── allure-results/                # Output folder for raw Allure results
+├── allure-project-report/         # Allure HTML report (after generation)
+├── Project Demo/                  # Demo files (screenshot + video)
+│   └── Allure_Project_Report.png
 │   └── Project_demo_with_allure_reports.mp4
+├── Library_API_Endpoint_Documentation.pdf
 └── README.md
-License
-This project is licensed under the MIT License.
-
-Author
-Satvik Jayalwal
