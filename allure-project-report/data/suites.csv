@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","271","Verify adding a book using AddBook API","","Fri Aug 01 12:28:09 IST 2025","passed","Fri Aug 01 12:28:10 IST 2025","","","",""
+"","215","Add books dynamically with different ISBN and aisle values -- @1.2 ","","Fri Aug 01 12:28:10 IST 2025","passed","Fri Aug 01 12:28:10 IST 2025","","","",""
+"","476","Session management check","","Fri Aug 01 12:28:10 IST 2025","failed","Fri Aug 01 12:28:11 IST 2025","","","",""
+"","236","Add books dynamically with different ISBN and aisle values -- @1.1 ","","Fri Aug 01 12:28:10 IST 2025","passed","Fri Aug 01 12:28:10 IST 2025","","","",""
