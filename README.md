@@ -61,9 +61,9 @@ This project is built as part of a Python SDET (Software Development Engineer in
 
 - Web scraping for data extraction
 
-- Folder Structure
+## Folder Structure
 
-BackEndAutomation :
+- BackEndAutomation :
 
 1. features
   1.1 steps
