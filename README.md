@@ -3,34 +3,28 @@ This project demonstrates end-to-end backend automation using Python. It covers 
 
 Note: This project does not use PyTest. All test cases are implemented using behave (a BDD framework).
 
-Project Demo
-Screenshot of Allure Report
+Screenshot
+
+![Allure Report Screenshot](Project%20Demo/Allure_Project_Report.png)
 
 Demo Video
-Watch the Demo
+
+Watch the demo video here:  
+📹 `Project_demo_with_allure_reports.mp4` located inside the `Project Demo/` folder.
 
 Key Features
-JSON file parsing and creation
 
-CSV read/write automation
-
-API Testing with Python requests library
-
-CRUD operations: GET, POST, PUT, DELETE
-
-Database interaction using mysql.connector
-
-Full BDD framework setup using behave
-
-Dynamic payload creation using DB data
-
-SSH connectivity using paramiko
-
-Executing remote batch jobs via SSH
-
-Uploading/downloading files to/from Linux servers
-
-Web scraping using BeautifulSoup
+- JSON file parsing and creation
+- CSV read/write automation
+- API Testing with Python requests library
+- CRUD operations: GET, POST, PUT, DELETE
+- Database interaction using mysql.connector
+- Full BDD framework setup using behave
+- Dynamic payload creation using DB data
+- SSH connectivity using paramiko
+- Executing remote batch jobs via SSH
+- Uploading/downloading files to/from Linux servers
+- Web scraping using BeautifulSoup
 
 How to Run the BDD Test Suite and Generate Allure Report
 bash
@@ -67,22 +61,20 @@ This project is built as part of a Python SDET (Software Development Engineer in
 - Web scraping for data extraction
 
 - Folder Structure
-graphql
-Copy
-Edit
-BackEndAutomation/
+
+BackEndAutomation :
+
+1.  features/                       
+│   1.1 AddBook.feature
 │
-├── features/                       # BDD feature files
-│   └── AddBook.feature
+2.  steps/               # Step implementations
+│   2.1 steps_addBook.py
 │
-├── stepDefinitions/               # Step implementations
-│   └── steps_addBook.py
-│
-├── utilities/                     # Utilities for DB, SSH, File IO, etc.
-│   └── dbUtils.py
-│   └── sshUtils.py
-│   └── jsonHandler.py
-│   └── csvHandler.py
+3.  utilities/                     # Utilities for DB, SSH, File IO, etc.
+│   3.1 __init__.py
+│   3.2 configurations.py
+│   3.3 properties.ini
+│   3.4 resources.py
 │
 ├── allure-results/                # Output folder for raw Allure results
 ├── allure-project-report/         # Allure HTML report (after generation)
