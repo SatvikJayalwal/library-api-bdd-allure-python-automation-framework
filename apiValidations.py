@@ -45,13 +45,13 @@ assert actualBook == expectedBook
 How to Run the BDD Test Suite and Generate Allure Report:
 
 1. Execute BDD tests using Behave and generate raw Allure results:
-   > behave -f allure_behave.formatter:AllureFormatter -o allure-results/ features/
+   behave -f allure_behave.formatter:AllureFormatter -o allure-results/ features/
 
 2. Generate the Allure HTML report from the results directory:
-   > allure generate allure-results/ -o allure-project-report/ --clean
+   allure generate allure-results/ -o allure-project-report/ --clean
 
 3. Open the generated Allure report in your default web browser:
-   > allure open allure-project-report/
+   allure open allure-project-report/
 
 Note:
 - Ensure Allure is installed and added to your system PATH.
