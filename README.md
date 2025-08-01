@@ -41,7 +41,7 @@ Watch the demo video here:
 
 ## How to Run the BDD Test Suite and Generate Allure Report
 
-- Make sure Allure is installed and available in your system PATH
+(Make sure Allure is installed and available in your system PATH)
 
 # 1. Run the BDD tests and generate Allure raw results:
 behave -f allure_behave.formatter:AllureFormatter -o allure-results/ features/
@@ -51,9 +51,6 @@ allure generate allure-results/ -o allure-project-report/ --clean
 
 # 3. Open the Allure report:
 allure open allure-project-report/
-
-- The report will be available at: allure-project-report/
-
 
 ## Course Overview (Covered in this project)
 This project is built as part of a Python SDET (Software Development Engineer in Test) course. The course covers:
