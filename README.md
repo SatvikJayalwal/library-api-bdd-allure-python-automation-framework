@@ -14,6 +14,7 @@ This project demonstrates end-to-end backend automation using Python. It covers 
   <tr>
     <td><img src="Project%20Demo/Allure_Project_Report_graphs.png" width="250"/></td>
     <td><img src="Project%20Demo/Allure_Project_Report_Timeline.png" width="250"/></td>
+    <td><img src="Project%20Demo/terminal_output.png" width="250"/></td>
     <td></td>
   </tr>
 </table>
