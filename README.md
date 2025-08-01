@@ -48,10 +48,10 @@ behave -f allure_behave.formatter:AllureFormatter -o allure-results/ features/
 
 # 2. Generate the HTML report:
 allure generate allure-results/ -o allure-project-report/ --clean
-
+--
 # 3. Open the Allure report:
 allure open allure-project-report/
-
+--
 ## Course Overview (Covered in this project)
 This project is built as part of a Python SDET (Software Development Engineer in Test) course. The course covers:
 
