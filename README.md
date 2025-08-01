@@ -27,9 +27,6 @@ Watch the demo video here:
 - Web scraping using BeautifulSoup
 
 ## How to Run the BDD Test Suite and Generate Allure Report
-bash
-Copy
-Edit
 
 - Make sure Allure is installed and available in your system PATH
 
